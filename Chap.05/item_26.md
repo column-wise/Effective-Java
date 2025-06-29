@@ -56,7 +56,7 @@ to Stamp
 
 ---
 
-List 같은 raw type은 사용하면 안되지만, List<Object> 처럼 임의 객체를 허용하는 parameterized type은 괜찮다.  
+List 같은 raw type은 사용하면 안되지만, List\<Object> 처럼 임의 객체를 허용하는 parameterized type은 괜찮다.  
 => 오잉????
 
 ```java
