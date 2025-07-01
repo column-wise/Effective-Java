@@ -96,6 +96,14 @@ cast의 반환 타입은 Class 객체의 타입 매개변수와 같다.
 
 다만, 악의적인 클라이언트가 Class 객체를 제네릭이 아닌 로타입으로 넘기면 Favorites 인스턴스의 타입 안정성이 쉽게 깨진다.
 
+```java
+Favorites f = new Favorites();
+Class unsafe = String.class; // raw type!
+f.putFavorite(unsafe, 123); // 👈 String.class인데 Integer 넣음 (컴파일 경고도 없음)
+```
+
+문제가 되는 상황
+
 -> 동적 형변환을 쓰면 된다.
 
 ```java
