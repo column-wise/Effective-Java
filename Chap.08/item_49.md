@@ -24,9 +24,6 @@ strategy가 null이면 NullPointerException을 발생시키고, 아니면 그대
 
 checkFromIndexSize, checkFromToIndex, checkIndex 인데, 리스트와 배열 전용으로 설계되었고, 예외 메시지를 지정할 수 없고, 닫힌 범위(양 끝단 포함)는 다루지 못하지만, 유용하다.
 
----
-
-메서드 바디 실행 전에 
 
 <br>
 
