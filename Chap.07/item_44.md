@@ -46,7 +46,7 @@ LinkedHashMap을 생각해보자....
 이 클래스의 protected 메서드인 removeEldestEntry를 재정의하면 캐시로 사용할 수 있다.
 
 ```java
-protected boolean remove EldestEntry(Map.Entry<K, V> eldest) {
+protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
     return size() > 100;
 }
 ```
