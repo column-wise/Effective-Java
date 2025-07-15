@@ -5,7 +5,7 @@
 1. 여러분의 API가 다른 사람이 익히고 사용하기 쉬워진다.
 2. 예외 클래스 수가 적을수록 메모리 사용량도 줄고, 클래스를 적재하는 시간도 적게 걸린다.
 
-## 재상요하기 좋은 표준 예외
+## 재사용하기 좋은 표준 예외
 
 1. `IllegalArgumentException`
 
@@ -13,7 +13,7 @@
 
    ※ null 값을 허용하지 않는 메서드에 null을 건네거나 시퀀스의 허용 범위를 넘는 값을 건넬 때 등
 
-   더 구체적으로 표현할 수 있는 예외가 있는 상황(`NullPointerException`, `IndexOutOfBoundsException`)에서는 `IllegalAargumentException`으로 뭉뚱그리지 말고 구분해서 사용하자
+   더 구체적으로 표현할 수 있는 예외가 있는 상황(`NullPointerException`, `IndexOutOfBoundsException`)에서는 `IllegalArgumentException`으로 뭉뚱그리지 말고 구분해서 사용하자
 
 2. `IllegalStateException`
 
